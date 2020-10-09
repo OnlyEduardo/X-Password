@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.swellshinider.controllers.EditRegisterController">
+   <children>
+      <Text fx:id="editingRegisterTal" layoutX="28.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editando: Nome do Registro" wrappingWidth="550.936767578125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Separator layoutX="28.0" layoutY="51.0" prefHeight="6.0" prefWidth="244.0" />
+      <Pane layoutX="52.0" layoutY="54.0" prefHeight="145.0" prefWidth="503.0">
+         <children>
+            <Text layoutX="2.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valores atuais:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="89.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="actualUser" editable="false" layoutX="155.0" layoutY="47.0" prefHeight="25.0" prefWidth="351.0" />
+            <Text layoutX="89.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="actualEmail" editable="false" layoutX="155.0" layoutY="77.0" prefHeight="25.0" prefWidth="351.0" />
+            <Text layoutX="89.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="actualPass" editable="false" layoutX="155.0" layoutY="108.0" prefHeight="25.0" prefWidth="286.0" />
+            <Button fx:id="copyButton" layoutX="448.0" layoutY="108.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="Copiar" />
+         </children>
+      </Pane>
+      <Separator layoutX="-1.0" layoutY="200.0" prefHeight="6.0" prefWidth="608.0" />
+      <Text layoutX="72.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Novo Usuário:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="newUser" layoutX="180.0" layoutY="239.0" onAction="#editAndSave" prefHeight="25.0" prefWidth="381.0" />
+      <Text layoutX="72.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Novo Email:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="newEmail" layoutX="180.0" layoutY="273.0" onAction="#editAndSave" prefHeight="25.0" prefWidth="381.0" />
+      <Text layoutX="72.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nova senha:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="newPass" layoutX="180.0" layoutY="309.0" onAction="#editAndSave" prefHeight="25.0" prefWidth="381.0" />
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#cancel" text="Cancelar" />
+      <Text fill="RED" layoutX="158.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Deixe em branco se não deseja alterar o campo" />
+      <Button layoutX="503.0" layoutY="361.0" mnemonicParsing="false" onAction="#editAndSave" text="Editar e Salvar" />
+   </children>
+</Pane>

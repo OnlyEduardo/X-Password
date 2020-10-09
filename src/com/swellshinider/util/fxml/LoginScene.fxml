@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.swellshinider.controllers.LoginController">
+   <children>
+      <PasswordField fx:id="inputMasterPassField" layoutX="146.0" layoutY="188.0" onAction="#enterLoginAction" prefHeight="25.0" prefWidth="309.0" promptText="Digite a senha mestra" />
+      <Text layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X-Password" textAlignment="CENTER" wrappingWidth="600.0">
+         <font>
+            <Font name="Calibri Bold" size="96.0" />
+         </font>
+      </Text>
+      <Button layoutX="227.0" layoutY="265.0" mnemonicParsing="false" onAction="#enterLoginAction" prefHeight="55.0" prefWidth="146.0" text="Entrar" />
+      <Text fx:id="textToShowVersion" layoutX="7.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="v2.0.0" textAlignment="RIGHT" wrappingWidth="586.1366577148438" />
+      <Text fx:id="textWarningPassword" fill="RED" layoutX="146.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="309.0" />
+   </children>
+</Pane>

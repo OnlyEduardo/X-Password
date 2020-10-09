@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.swellshinider.controllers.ChangeMasterPassController">
+   <children>
+      <TextField fx:id="actualPass" layoutX="76.0" layoutY="46.0" onAction="#changeMasterPassword" prefHeight="25.0" prefWidth="249.0" promptText="Senha mestra atual" />
+      <PasswordField fx:id="newPass" layoutX="76.0" layoutY="84.0" onAction="#changeMasterPassword" prefHeight="25.0" prefWidth="249.0" promptText="Nova senha mestra" />
+      <PasswordField fx:id="confirmNewPass" layoutX="76.0" layoutY="120.0" onAction="#changeMasterPassword" prefHeight="25.0" prefWidth="249.0" promptText="Confirme a nova senha mestra" />
+      <Button layoutX="119.0" layoutY="168.0" mnemonicParsing="false" onAction="#changeMasterPassword" prefHeight="47.0" prefWidth="163.0" text="Mudar senha" />
+      <Button layoutY="224.0" mnemonicParsing="false" onAction="#goBackToMainScene" text="Voltar" />
+      <Text fx:id="warningMessage1" fill="RED" layoutX="76.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="249.0" />
+      <Text fx:id="warningMessage2" fill="RED" layoutX="76.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="249.0" />
+   </children>
+</Pane>
